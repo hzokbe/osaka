@@ -1,0 +1,8 @@
+mp:
+  messaging:
+    outgoing:
+      currency-quote:
+        connector: smallrye-kafka
+        topic: currency-quote
+exchange-rate-api:
+  key: ${EXCHANGE_RATE_API_KEY}
