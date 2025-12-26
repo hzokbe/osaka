@@ -1,0 +1,11 @@
+quarkus:
+  http:
+    port: 8082
+mp:
+  messaging:
+    incoming:
+      proposal:
+        value:
+          deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        connector: smallrye-kafka
+        topic: proposal
