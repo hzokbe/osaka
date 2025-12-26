@@ -232,7 +232,7 @@ Devem existir métricas e logs relacionados a desempenho e falhas de acesso ao P
 
 ---
 
-## 3. Modelagem das Entidades do Microsserviço de Cotação (Em Implementação)
+## 3. Modelagem das Entidades do Microsserviço de Cotação
 
 ### 3.1 Entidades
 
@@ -253,3 +253,26 @@ Atributos da entidade `CurrencyQuote`:
 - `Currency to`
 - `BigDecimal rate`
 - `Timestamp quotedAt`
+
+## 4. Modelagem das Entidades do Microsserviço de Propostas (Em Implementação)
+
+### 4.1 Entidades
+
+As entidades manipuladas pelo microsserviço de proposta são:
+
+- `enum Country`
+
+- `class Proposal`
+
+### 4.2 Entidade `Proposal`
+
+**Proposal** representa a proposta de compra de uma empresa cliente. Ela contém informações sobre a empresa proponente, a quantidade (em toneladas) que se pretende adquirir, o preço por tonelada e o país onde a proposta foi realizada.
+
+Atributos da entidade `Proposal`:
+
+- `UUID id`
+- `String customerName`
+- `BigDecimal tons`
+- `BigDecimal pricePerTon`
+- `Country country`
+- `Timestamp createAt`
