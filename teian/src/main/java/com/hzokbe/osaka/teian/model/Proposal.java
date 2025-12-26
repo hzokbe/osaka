@@ -2,8 +2,10 @@ package com.hzokbe.osaka.teian.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.UUID;
 
 @Entity
@@ -44,4 +46,8 @@ public class Proposal extends PanacheEntityBase {
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     public Country country;
+
+    @Column(nullable = false, name = "created_at")
+    @CreationTimestamp
+    public Timestamp createdAt;
 }
