@@ -1,6 +1,6 @@
 package com.hzokbe.osaka.teian.controller;
 
-import com.hzokbe.osaka.teian.dto.proposal.request.ProposalRequestDTO;
+import com.hzokbe.osaka.teian.dto.request.ProposalRequestDTO;
 import com.hzokbe.osaka.teian.service.ProposalService;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;

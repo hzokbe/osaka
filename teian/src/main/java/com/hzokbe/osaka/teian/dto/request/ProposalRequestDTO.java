@@ -1,13 +1,10 @@
-package com.hzokbe.osaka.teian.dto.proposal;
+package com.hzokbe.osaka.teian.dto.request;
 
-import com.hzokbe.osaka.teian.model.proposal.Proposal;
+import com.hzokbe.osaka.teian.model.Proposal;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
-public class ProposalDTO {
-    private UUID id;
-
+public class ProposalRequestDTO {
     private String customerName;
 
     private BigDecimal tons;
@@ -15,26 +12,6 @@ public class ProposalDTO {
     private BigDecimal pricePerTon;
 
     private Proposal.Country country;
-
-    public ProposalDTO(UUID id, String customerName, BigDecimal tons, BigDecimal pricePerTon, Proposal.Country country) {
-        this.id = id;
-
-        this.customerName = customerName;
-
-        this.tons = tons;
-
-        this.pricePerTon = pricePerTon;
-
-        this.country = country;
-    }
-
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
 
     public String getCustomerName() {
         return customerName;

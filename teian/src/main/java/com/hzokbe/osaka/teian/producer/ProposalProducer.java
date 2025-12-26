@@ -1,6 +1,6 @@
 package com.hzokbe.osaka.teian.producer;
 
-import com.hzokbe.osaka.teian.dto.proposal.ProposalDTO;
+import com.hzokbe.osaka.teian.dto.ProposalDTO;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.eclipse.microprofile.reactive.messaging.Channel;

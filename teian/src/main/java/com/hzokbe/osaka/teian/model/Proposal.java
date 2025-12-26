@@ -1,4 +1,4 @@
-package com.hzokbe.osaka.teian.model.proposal;
+package com.hzokbe.osaka.teian.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;

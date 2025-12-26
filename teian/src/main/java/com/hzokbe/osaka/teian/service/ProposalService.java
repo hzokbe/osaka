@@ -1,12 +1,12 @@
 package com.hzokbe.osaka.teian.service;
 
-import com.hzokbe.osaka.teian.dto.proposal.ProposalDTO;
-import com.hzokbe.osaka.teian.dto.proposal.request.ProposalRequestDTO;
-import com.hzokbe.osaka.teian.dto.proposal.response.ProposalResponseDTO;
+import com.hzokbe.osaka.teian.dto.ProposalDTO;
+import com.hzokbe.osaka.teian.dto.request.ProposalRequestDTO;
+import com.hzokbe.osaka.teian.dto.response.ProposalResponseDTO;
 import com.hzokbe.osaka.teian.exception.proposal.InvalidCustomerNameException;
 import com.hzokbe.osaka.teian.exception.proposal.InvalidPricePerTonException;
 import com.hzokbe.osaka.teian.exception.proposal.InvalidValueForTonsException;
-import com.hzokbe.osaka.teian.model.proposal.Proposal;
+import com.hzokbe.osaka.teian.model.Proposal;
 import com.hzokbe.osaka.teian.producer.ProposalProducer;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
