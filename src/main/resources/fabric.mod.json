@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "osaka",
+	"version": "${version}",
+	"name": "osaka",
+	"description": "sata andagi",
+	"authors": [
+		"hzokbe"
+	],
+	"contact": {
+		"homepage": "https://www.github.com/hzokbe",
+		"sources": "https://www.github.com/hzokbe/osaka"
+	},
+	"license": "MIT",
+	"icon": "assets/osaka/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.hzokbe.osaka.Osaka",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.hzokbe.osaka.OsakaDataGenerator",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			"com.hzokbe.osaka.OsakaClient"
+		]
+	},
+	"mixins": [
+		"osaka.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
