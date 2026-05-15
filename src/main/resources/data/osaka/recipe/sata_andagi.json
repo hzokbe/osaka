@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "W": "minecraft:wheat",
+    "S": "minecraft:sugar",
+    "E": "minecraft:egg",
+    "M": "minecraft:milk_bucket"
+  },
+  "pattern": [
+    "WSW",
+    "ESE",
+    "WMW"
+  ],
+  "result": {
+    "id": "osaka:sata_andagi",
+    "count": 4
+  }
+}
