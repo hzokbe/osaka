@@ -1,0 +1,18 @@
+{
+  "entity.ayumu_kasuga.ambient": {
+    "sounds": [
+      "osaka:entity/ayumu_kasuga/ambient"
+    ]
+  },
+  "entity.ayumu_kasuga.hurt": {
+    "sounds": [
+      "osaka:entity/ayumu_kasuga/hurt1",
+      "osaka:entity/ayumu_kasuga/hurt2"
+    ]
+  },
+  "entity.ayumu_kasuga.death": {
+    "sounds": [
+      "osaka:entity/ayumu_kasuga/death"
+    ]
+  }
+}
